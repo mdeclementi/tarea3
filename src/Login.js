@@ -7,8 +7,8 @@ import { Button } from 'primereact/button';
 function Login(props) {
 
     const [error, setError] = useState(false);
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
+    const [username, setUsername] = useState("john");
+    const [password, setPassword] = useState("P4ssW0rd!#");
 
     const apiUrl = 'https://three-points.herokuapp.com/api/login';
 

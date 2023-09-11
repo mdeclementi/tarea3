@@ -21,7 +21,7 @@ function Post(props) {
                     <div className="grid mt-2">
                         <div className="col-12">
                             <div className="postTimeStamp p-card-subtitle">{props.createdAt}</div>
-                            <div className="postLikes"><Button label={likes + "k"} icon="pi pi-heart" severity="danger" size="small" onClick={aumentarLikes} /></div>
+                            <div className="postLikes"><Button label={`${likes}k`} icon="pi pi-heart" severity="danger" size="small" onClick={aumentarLikes} /></div>
                         </div>
                         <div className="col-12">
                             <strong>@{props.autor}</strong>

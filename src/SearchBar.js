@@ -3,15 +3,11 @@ import { InputText } from 'primereact/inputtext';
 function SearchBar(props) {
 
     const filtrarPostsHandler = (event) => {
-        console.log(props.posts);
-        console.log(event.target.value);
-        const textoSearchBox = event.target.value.toLowerCase();
-        const filteredPosts = props.posts.filter((post) =>
-            post.texto === textoSearchBox
-        );
-
-        console.log(filteredPosts);
-        props.setPostsFiltrados(filteredPosts);
+        //console.log(props.posts);
+        //console.log(event.target.value);
+        const filteredData = props.posts.filter((item) => item.texto.includes(event.target.value));
+        //console.log(filteredData);
+        props.setPostsFiltrados(filteredData);
 
     };
 
